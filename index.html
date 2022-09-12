@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TSM Email Signature Generatoe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <h2>Generate your Two Small Men With Big Hearts Signature:</h2>
+      <ol>
+        <li>Fill out all the fields below that are applicable.</li>
+        <li>Proceed to instructions for your client (outlook or gmail) below "signatures" section.</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Your information:</h3>
+      <div id='inputs'>
+        <table>
+          <tr>
+            <td>
+              <label for='name'>Name:</label>
+            </td>
+            <td>
+              <input id='name' placeholder='First & Last Name'></input>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for='position'>Position:</label>
+            </td>
+            <td>
+              <input id='position' placeholder='This is what I do'></input>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for='phone'>Phone:</label>
+            </td>
+            <td>
+              <input id='phone' placeholder='(937) 555-5555'></input>
+            </td>
+          </tr>
+          <tr id="mobileRowInput">
+            <td>
+              <label for='cell'>Cell phone:</label>
+            </td>
+            <td>
+              <input id='cell' placeholder="(937) 555-5555"></input>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for='email'>Email:</label>
+            </td>
+            <td>
+              <input id='email' placeholder='name@gmail.com'></input>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <h3>Signatures:</h3>
+    <hr>
+    <h3>Larger font:</h3>
+    <div class='controls' data-sig='signature_1'>
+      <button class='select'>Select Signature (for Gmail)</button>
+      <br>
+      <button class='save'>Prepare HTML (for Outlook)</button>
+      <a download='NRG_signature.htm'>Save HTML to file</a>
+    </div>
+    <div id='signature_1_container'>
+      <table cellspacing="0" cellpadding="0px;" id='signature_1'>
+        <tr>
+          <td rowspan=3 style="white-space: nowrap; padding: 10px 8px 0 0; border-right:solid 2px #93c0f8; text-align:right; line-height: 18px; width:99px; height:33px;">
+            <img src="https://twosmallmenwithbighearts.kinsta.cloud/wp-content/themes/twosmallmen/img/tsm-logo-lg.svg" />
+          </td>
+          <td style="padding-left:10px; color:#555; font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:16px; ">
+            <span class="name" style="color:#2781f2; font-weight:bold; font-size:24px;"> James Dean </span>
+            <br>
+            <span class="position"> Two Small Men Employee </span>
+            <div id="phoneDivs" style="display:flex;flex-direction:row;align-items: center;background-color:#bcc0c6">
+              <div id="phoneDivOutput">
+                <span style="display: inline-block; margin-right: 4px; color:#2781f2; font-weight: bold; ">
+                  <img class="iphoneImage" src="https://twosmallmen.com/wp-content/uploads/2022/09/icons8-phone-50.png"></img>
+                </span>
+                <span class="phone"> (888) 777-7777 </span>
+              </div>
+              <div id="mobileDivOutput">
+                <span style="display: inline-block; margin: 0 3px; color:#2781f2; font-weight: bold; margin: 0px 0px 0px 15px;">
+                  <img class="iphoneImage" src="https://twosmallmen.com/wp-content/uploads/2022/09/icons8-iphone-x-50.png"></img>
+                </span>
+                <span class="cell"> (888) 333-3333 </span>
+              </div>
+            </div>
+            <br>
+            <span style='white-space:nowrap'>
+              <span style="display: inline-block; margin-right: 2px; color:#2781f2; font-weight: bold;">e</span>
+              <a class="email" href="mailto:vader@pureenergies.com" style="color: #555; text-decoration:none;"> info@twosmallmen.com </a>
+            </span>
+            <br>
+            <span style='white-space:nowrap'>
+              <span style="display: inline-block; margin-right: 2px; color:#2781f2; font-weight: bold;">w</span>
+              <a href="https://twosmallmen.com" style="font-family: Helvetica, Arial; line-height: 18px; color: #555; text-decoration:none;">https://twosmallmen.com</a>
+            </span>
+            <br>
+            <!-- Social media links -->
+            <div style='margin-top: 4px'>
+              <a style="width:20px; height: 20px;" href="https://www.facebook.com/twosmallmencanada">
+                <img alt="Facebook" src="https://twosmallmen.com/wp-content/uploads/2022/09/facebook-circle-medium.png" width="40px" />
+              </a>
+              <a style="width:20px; height: 20px;" href="https://www.instagram.com/twosmallmencanada/">
+                <img alt="Instagram" src="https://twosmallmen.com/wp-content/uploads/2022/09/instagram-circle-medium.png" width="40px" />
+              </a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <table cellspacing="0" cellpadding="0px;" id='signature_1'>
+        <tr text-align="justify">
+          <td rowspan=3>
+            <img src="https://www.rocketseed.com/wp-content/uploads/2020/08/Email-signature-banner-example_sub-brands.png"></img>
+          </td>
+        </tr>
+      </table>
+    <h3>Email client instructions:</h3>
+    <h4>Adding the signature to Outlook (2007 & up):</h4>
+    <!--
+       <div class='instructions'><ol><li>Prepare the signature file:</li><ol><li>Click "Prepare HTML" next to desired signature</li><li>Click "Save HTML to file"</li><li>Open your browser's download window (usually Ctrl+J on windows or Shift+Cmd+J on Mac)</li><li>Locate "NRG_signature.htm" in the list of recent downloads</li><li>Click "Show in Folder" (Chrome) or right-click and select "Open Containing Folder" (Firefox)</li><li>Keep this folder open (or make note of where the file is, you will need it in a few steps)</li></ol><li>Create a blank signature in Outlook:</li><ol><li>Go to "Tools" menu and select "Options" (if you don't have a "Tools" menu, go to "File" -> "Options)</li><li>Go to "Mail Format" tab (alternatively, "Mail" option on the left)</li><li>Click "Signatures" button</li><li>Click "New" button</li><li>Enter <b>"NRG_signature"</b> for the name of your signature</li><li>Click "OK" to save the new signature</li><li>Click "OK" again to close signature editing window</li><li>Click "OK" again to close options window</li></ol><li>Install our custom signature:</li>
+          Find Outlook signatures folder:
+          <ol><li>Click Start</li><li>In the "Run" input (it's normally the little input box at the bottom of start menu), enter "%APPDATA%" and hit "Enter" (alternatively, if you don't have that option in start menu you can start it with keyboard shortcut Windows+R)</li>
+            A folder should open. <i>If it didn't, try doing the same and entering "%APPDATA%\" into the input box.</i><li>In the folder that opened, if you have a "Microsoft" folder - open it. Otherwise, if you have "Roaming" folder - look in it, there should "Microsoft" folder in it.</li><li>In "Microsoft" folder, open "Signatures" folder".</li><li>Delete all files named "NRG_signature".</li><li>Copy the downloaded "NRG_signature.htm" file into that folder (from your downloads folder, should be open since step 1 of this guide).</li></ol><li>Set our custom signature as default:</li><ol><li>Go to "Tools" menu and select "Options" (if you don't have a "Tools" menu, go to "File" -> "Options)</li><li>Go to "Mail Format" tab (alternatively, "Mail" option on the left)</li><li>Click "Signatures" button</li><i>You should see your fancy new signature now.</i><li>On the right side of this window, under "Choose default signature" select "NRG_signature" in both "new messages" and "replys/forwards" dropdowns.</li><li>Click "OK" to save</li><li>Click "OK" again to close options window</li></ol><li>Test to make sure it works:</li><ol><li>Create a new email</li><li>Verify your fancy new signature is already included</li><li>Rejoice!</li></ol></ol>
+        Here are a couple of video walkthroughs of these steps: <a target='_blank' href='https://www.youtube.com/watch?v=0qvJzNeL0tk'>one</a> and <a target='_blank' href='https://www.youtube.com/watch?v=d1CNxuRKNs8'>two</a>.
+      </div><h4>Adding the signature to Gmail:</h3><div class='instructions'><ol><li>Click "Select this signature" next to desired one</li><li>Copy with Ctrl+C (or Cmd+C on Mac)</li><li>In your gmail, click the rotary icon (right below profile picture)</li><li>Click "settings" from drop-down menu</li><li>Scroll down to "Signature" section</li><li>Click in the text editor box for signature</li><li>Paste with Ctrl+V (or Cmd+V on Mac), or right-click -> "Paste"</li><li>Scroll to the bottom of the page and click "Save"</li><li>Click "Compose" to verify your new signature works.</li></ol><p>Below is a quick gif that illustrates the steps above.</p><img src='http://i.imgur.com/DH82U74.gif'></div>  -->
+    <script src="index.js"></script>
+  </body>
+</html>
